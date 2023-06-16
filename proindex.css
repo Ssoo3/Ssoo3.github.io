@@ -17,7 +17,8 @@ html {
 body {
     margin: 0; padding:0;
     font-family: "main";
-    height: 500px;
+    
+
 }
 
 #header {
@@ -31,11 +32,11 @@ body {
 }
 #logo {
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 30px;
 }
 #logo img {
-    width:13%;
+    width:18%;
 }
 #navmenu {
     display: flex;
@@ -58,26 +59,43 @@ body {
     text-decoration: underline;
     color: rgb(255, 216, 243);
 }
+#main-container {
+    position: relative;
+    padding-top: 150px;
+}
+
+#prop {
+    float: left;
+    position: relative;
+    width: 50%;
+}
+#prop > img {
+    width: 65%;
+    padding-left: 100px;
+    padding-top: 60px;
+}
 
 #main {
+    float: left;
     position: relative;
-    margin: 100px;
-    margin-top: 200px;
-    margin-bottom: 60px;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 60px;
 }
 #title {
     font-family: "suit";
     font-size: 32px;
-    margin-left: 700px;
 }
 #d1 {
     font-family: "na";
     font-size: 20px;
     line-height: 160%;
-    margin-left: 700px;
+    z-index: 10000px;
 }
 #d1 a {
     color: #000;
+    z-index: 10000px;
+    
 }
 #d1 a:link {
     text-decoration: none;
@@ -87,27 +105,115 @@ body {
     color:rgb(132, 224, 255);
 }
 
-.pr1 {
+/* .pr1 {
     position: absolute;
-    margin-top: -450px;
+    top: 50px;
+    left: 50px;
+    width: 25%;
+    background-color: blue;
+    /*margin-top: -450px;
     margin-left: 130px;
+    text-align:start;
 }
 .pr1 img {
-    width: 17%;
+    width: 100%;
 }
 .pr2 {
     position: absolute;
-    margin-top: -580px;
+    margin-top: -550px;
     margin-left: 420px;
+    text-align: start;
 }
 .pr2 img {
     width: 23%;
 }
 .pr3 {
-    position: absolute;
-    margin-top: -250px;
-    margin-left: 380px;
+   width: 60%;
 }
 .pr3 img {
-    width: 16%;
+    position: relative;
+    margin-top: -250px;
+    margin-left: 380px;
+    text-align: start;
+    width: 20%;
+    z-index: -100000px;
+}*/
+
+
+@media screen and (max-width: 860px) {
+    #HTML {display:none;}
+    #header {
+        height: 160px;
+    }
+    #logo {
+        margin-left: 20px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    #logo img{
+        width: 25%;
+    }
+    #navmenu {
+        padding: 0;
+        justify-content: center;
+        top: 120px;
+    }
+    #title {
+        font-size: 24px;
+    }
+    .pr1 {
+        margin-left: 50px;
+        margin-top: -400px;
+    }
+    .pr2 {
+        margin-left: 10px;
+        margin-top: 180px;
+    }
+    .pr3 {
+        margin-left: 60px;
+        margin-top: 250px;
+    }
+    #d1 {
+        font-family: "na";
+        font-size: 20px;
+        line-height: 160%;
+        z-index: 10000px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #HTML {display:none;}
+    #header {
+        height: 160px;
+    }
+    #logo {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;  
+    }
+    #logo> img {
+        width: 20%;
+    }
+    #navmenu {
+        text-align: center ;
+        padding: 0;
+        justify-content: center;
+        top: 120PX;
+    }
+    #navmenu> a { 
+         margin: 0 15px;
+    }
+    #main-container {
+        width: 90%;
+    }
+    #title {
+        font-size: 24px;
+    }
+    #art {
+        top:180px;
+    }
+    .artimg> img {
+        width:100%;
+    }
 }
