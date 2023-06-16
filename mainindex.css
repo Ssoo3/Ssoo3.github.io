@@ -61,48 +61,43 @@ body {
 
 #main {
     position: relative;
-    margin: 100px;
-    margin-top: 200px;
+    /*margin: 100px;
+    margin-top: 200px;*/
+    margin-top: 150px;
     margin-bottom: 60px;
 }
 
-#ml {
-    position: relative;
-    margin-top: 220px;
+#m1 {
+    float: left;
+    position: relative; 
+    width: 33.3333%;
     text-align: center;
-    z-index: 100000px;
 }
-#ml img {
-    width: 25%;
-}
-#m2 {
-    position: relative;
-    margin-top: -500px;
-    margin-left: 380px;
-    display: block;
-    z-index: -100000px;
+#m1 img {
+    width: 60%;
+    margin-top: 10px;
 }
 
-.m_2 img {
-    margin-left: -200px;
+#m2 {
+    float: left;
+    position: relative;
+    width: 33.3333%;
+    text-align: center;
 }
-.m_3 img {
-    margin-top: 50px;
+#m2 img {
+    width: 65%;
+    margin-top: 40px;
 }
 
 #m3 {
+    float: left;
     position: relative;
-    margin-top: -405px;
-    margin-right: 380px;
-    display: block;
-    z-index: -100000px;
-    text-align: right;
+    width: 33.3333%;
+    text-align: center;
 }
-.m_5 img {
-    margin-right: -200px;
-}
-.m_6 img {
-    margin-top: 50px;
+#m3 img {
+    width: 60%;
+    margin-top: 10px;
 }
 
 
@@ -124,19 +119,9 @@ body {
         justify-content: center;
         top: 120px;
     }
-    #m1 {
-        width: 100%
-    }
-    #ml img {
+    #m1, #m2, #m3 {
+        float: none;
         width: 100%;
-    }
-    #m2 {
-        position: relative;
-        margin-top: -500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        z-index: -100000px;
     }
 }
 
@@ -163,5 +148,4 @@ body {
     #navmenu> a { 
          margin: 0 15px;
     }
-    
 }
